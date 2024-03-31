@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>BookMarker</title>
+  </head>
+
+  <body>
+    <div class="cont">
+      <H1 class="text-white text-center">Bookmarker</H1>
+    <div class="m-auto p-5 cardTitles w-75 text-center">
+      
+      <label class="text-white">Name </label>
+      <input id="nameSite" type="text" class="form-control text" />
+      <div id="nameAlertName" class="alert alert-danger d-none p-2 text-start"> Minimum 4 letters, and the first letter must be a capital letter</div>
+      <label class="text-white">Url</label>
+      <input id="linkSite" type="text" class="form-control mb-2" />
+      <div id="nameAlertUrl" class="alert alert-danger d-none p-2 text-start"> Write Url like this ex"www.exmple.com"</div>
+      <button disabled id="addBtn" class="btn btn-primary float-end">add</button>
+      <div class="clearfix"></div>
+        <div class="table-responsive overflow-auto">
+          <table class="table">
+
+              </thead>
+              <input
+              id="searchBar"
+              class="form-control my-3"
+              placeholder="Search By Name ............"
+              type="text"
+            />
+<tbody id="tabelBody"></tbody>
+      </table>
+
+
+    </div>
+  </div>
+  <div class="footer">&copy;<span id="year"> </span>2024<span> Ahmed M. Gohar. All rights reserved.</span></div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js.js"></script>
+  </body>
+</html>
